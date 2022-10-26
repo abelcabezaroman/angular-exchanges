@@ -1,28 +1,13 @@
 # AngularExchanges
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+Crea un proyecto con o sin lazy loading.
 
-## Development server
+En la pagina principal crea un input de tipo number con el valor por defecto 1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Haz una petición a `https://api.vatcomply.com/rates` para obtener todos los rates disponibles e imprimelos debajo del input creando una galería con todos esos rates y el nombre de ellos en grande...debajo de cada nombre añade el numero del rate correspondiente multiplicado por el número del input.
 
-## Code scaffolding
+Por defecto haz un estilo que evidencie que el rate base que se usa es el EUR.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Si el usuario hace click en otro rate cambia el estilo y haz una peticion a `https://api.vatcomply.com/rates?base=USD` cambiando `USD` por la moneda correspondiente.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# angular-exchanges
+Hecho eso, actualiza todos los valores con el rate correspondiente
